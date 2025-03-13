@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { useFrameSDK } from "@/providers/FramesSDKProvider";
 import { default as dynamicImport } from "next/dynamic";
 import Image from "next/image";
