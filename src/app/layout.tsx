@@ -2,7 +2,6 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 
-import { Header } from "@/components/ui/header";
 import { Providers } from "@/providers/Providers";
 
 const appUrl = process.env.NEXT_PUBLIC_URL;
@@ -11,10 +10,10 @@ const frame = {
   version: "next",
   imageUrl: `${appUrl}/image.png`,
   button: {
-    title: "Make Proposal",
+    title: "Mint a Map",
     action: {
       type: "launch_frame",
-      name: "Proposals",
+      name: "Farcastle Games",
       url: `${appUrl}`,
       iconImageUrl: `${appUrl}/icon.png`,
       splashImageUrl: `${appUrl}/splash.png`,
@@ -26,10 +25,10 @@ const frame = {
 export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL(`${appUrl}`),
-    title: "Proposals",
+    title: "Farcastle Games",
     openGraph: {
-      title: "Farcastle Proposals",
-      description: "Shape the fate of the realm",
+      title: "Farcastle Games",
+      description: "Mint a Map",
       images: `${appUrl}/image.png`,
     },
     other: {
@@ -67,10 +66,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased scrollbar-vert">
-        <Providers>
-          <Header />
-          <div className="mt-1">{children}</div>
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

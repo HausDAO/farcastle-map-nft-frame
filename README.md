@@ -1,6 +1,6 @@
-# Farcastle Proposals
+# Farcastle Mint a Map
 
-Farcaster Frame for creating moloch v3 dao proposals.
+Farcaster Frame for fun.
 
 ---
 
